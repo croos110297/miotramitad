@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación al Cine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎬 Invitación al Cine</h1>
+    <form id="invitationForm">
+        <label for="movie">¿Qué película quieres ver?</label>
+        <input type="text" id="movie" name="movie" required>
+
+        <label for="date">Selecciona una fecha:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Enviar Invitación</button>
+    </form>
+
+    <div class="spotify-player">
+        <h2>¡Escucha esta lista de reproducción!</h2>
+        <!-- Código de Embed de Spotify -->
+        <iframe src="https://open.spotify.com/embed/playlist/30oiBsErWigv7ERconmySN" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <div class="location">
+        <p>📍 Lugar: Cine Plaza Central</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
