@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Reserva Confirmada!</title>
     <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que el archivo CSS esté vinculado -->
+    <script>
+        // Función para obtener los parámetros de la URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                pelicula: params.get('pelicula'),
+                fecha: params.get('fecha')
+            };
+        }
+
+        // Función para mostrar la película y la fecha en el HTML
+        function mostrarReserva() {
+            const { pelicula, fecha } = getQueryParams();
+            document.getElementById('pelicula').textContent = pelicula ? pelicula : 'No se seleccionó ninguna película.';
+            document.getElementById('fecha').textContent = fecha ? fecha : 'No se seleccionó ninguna fecha.';
+        }
+
+        // Llamar a la función al cargar la página
+        window.onload = mostrarReserva;
+    </script>
 </head>
 <body>
-
-<div class="container">
-    <h1>¡Reserva Confirmada! 🎉</h1>
-    <p>¡Genial! Has reservado tu espacio para ver la película.</p>
-    <p>Nos veremos pronto en el Cine Plaza Central. ¡No olvides sonreír! 😊</p>
-    <p>Recuerda, cada película es mejor cuando se comparte con alguien especial. 💖</p>
-    <p>¡Hasta pronto!</p>
-</div>
-
+    <div class="container">
+        <h1>¡Reserva Confirmada! 🎉</h1>
+        <p>¡Genial! Has reservado tu espacio para ver la película <span id="pelicula"></span>.</p>
+        <p>La fecha de la reserva es: <span id="fecha"></span>.</p>
+        <p>Nos veremos pronto. ¡No olvides sonreír! 😊</p>
+        <p>Por cierto, ¿podrías enviarme una captura de la confirmación? Así me aseguro de que todo está perfecto para nuestra salida. 😉</p>
+        <p>Recuerda, cada película es mejor cuando se comparte con alguien especial. 💖</p>
+        <p>¡Hasta pronto!</p>
+    </div>
 </body>
 </html>
