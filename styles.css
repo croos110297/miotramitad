@@ -19,13 +19,13 @@ body {
 
 h1 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
-    color: white;
+    color: black;
 }
 
 input[type="text"], input[type="date"] {
@@ -59,5 +59,5 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-size: 1.2em;
-    color: white;
+    color: black;
 }
