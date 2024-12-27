@@ -1,68 +1,27 @@
 body {
     font-family: 'Times New Roman', serif; /* Cambiar la fuente a Times New Roman */
-    background: linear-gradient(to bottom, #b2f2b2, #99e6a2); /* Degradado de verde claro */
+    background-image: url('Fondo.jpg'); /* Cambiar 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    background-color: rgba(0, 0, 0, 0.7); /* Negro con 70% de transparencia para que se vea la imagen de fondo */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para el contenedor */
     max-width: 400px; /* Ancho máximo del contenedor */
     margin: auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
 }
 
 h1 {
-    text-align: center;
     color: white; /* Cambiar el color del texto a blanco para que contraste con el fondo negro */
 }
 
-form {
-    display: flex; /* Usar flexbox para centrar los elementos */
-    flex-direction: column; /* Colocar los elementos en columna */
-    align-items: center; /* Centrar los elementos horizontalmente */
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
+p {
     color: white; /* Cambiar el color del texto a blanco */
-}
-
-input[type="text"], input[type="date"] {
-    width: 90%; /* Ancho del input */
-    max-width: 300px; /* Ancho máximo del input */
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 90%; /* Ancho del botón */
-    max-width: 300px; /* Ancho máximo del botón */
-    padding: 10px;
-    background-color: #28a745; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838; /* Color del botón al pasar el mouse */
-}
-
-.spotify-player {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.location {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    color: white; /* Cambiar el color del texto a blanco */
+    margin: 10px 0; /* Espaciado entre párrafos */
 }
