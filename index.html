@@ -22,7 +22,6 @@
 
     <div class="spotify-player">
         <h2>¡Escucha esta lista de reproducción!</h2>
-        <!-- Código de Embed de Spotify -->
         <iframe src="https://open.spotify.com/embed/playlist/04yHuzAFh2262JfkwGp4qO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
 
@@ -31,7 +30,15 @@
     </div>
 </div>
 
-<script src="script.js"></script>
+<script>
+    document.getElementById('invitationForm').onsubmit = function(event) {
+        event.preventDefault(); // Evita el envío del formulario
+        const movie = document.getElementById('movie').value; // Obtiene el valor de la película
+        const date = document.getElementById('date').value; // Obtiene el valor de la fecha
+        // Redirige a la página de confirmación con los parámetros
+        window.location.href = `confirmation.html?pelicula=${encodeURIComponent(movie)}&fecha=${encodeURIComponent(date)}`;
+    };
+</script>
 
 </body>
 </html>
