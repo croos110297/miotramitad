@@ -4,5 +4,8 @@ document.getElementById('invitationForm').addEventListener('submit', function(ev
     const movie = document.getElementById('movie').value;
     const date = document.getElementById('date').value;
 
-    alert(`¡Hola! Te invito a ver "${movie}" el ${date} en el Cine Plaza Central. ¡Espero que puedas venir!`);
+    // Aquí podrías guardar la información si es necesario, pero para este ejemplo solo redirigimos.
+    
+    // Redirigir a la página de confirmación
+    window.location.href = 'confirmacion.html';
 });
