@@ -6,10 +6,10 @@ body {
 }
 
 .container {
-    background-color: black; /* Cambiar el fondo del contenedor a negro */
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para el contenedor negro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para el contenedor */
     max-width: 400px; /* Ancho máximo del contenedor */
     margin: auto; /* Centrar el contenedor */
 }
