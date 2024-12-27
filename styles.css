@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Reserva Confirmada!</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que el archivo CSS esté vinculado -->
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Times New Roman', serif; /* Cambiar la fuente a Times New Roman */
-            background-image: url('Fondo.jpg'); /* Cambiar 'fondo.jpg' por el nombre de tu imagen */
-            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-            background-position: center; /* Centra la imagen */
+            font-family: 'Times New Roman', serif;
+            background-image: url('Fondo.jpg');
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 20px;
         }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Negro con 70% de transparencia */
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para el contenedor */
-            max-width: 400px; /* Ancho máximo del contenedor */
-            margin: auto; /* Centrar el contenedor */
-            text-align: center; /* Centrar el texto */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
         }
 
         h1 {
-            color: white; /* Cambiar el color del texto a blanco para que contraste con el fondo negro */
+            color: white;
         }
 
         p {
-            color: white; /* Cambiar el color del texto a blanco */
-            margin: 10px 0; /* Espaciado entre párrafos */
+            color: white;
+            margin: 10px 0;
         }
     </style>
 </head>
