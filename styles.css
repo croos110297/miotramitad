@@ -1,22 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Times New Roman', serif; /* Cambiar la fuente a Times New Roman */
+    background: linear-gradient(to bottom, #b2f2b2, #99e6a2); /* Degradado de verde claro */
     margin: 0;
     padding: 20px;
 }
 
 .container {
-    background-color: white;
+    background-color: black; /* Cambiar el fondo del contenedor a negro */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para el contenedor negro */
     max-width: 400px; /* Ancho máximo del contenedor */
     margin: auto; /* Centrar el contenedor */
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: white; /* Cambiar el color del texto a blanco para que contraste con el fondo negro */
 }
 
 form {
@@ -28,6 +28,7 @@ form {
 label {
     display: block;
     margin: 10px 0 5px;
+    color: white; /* Cambiar el color del texto a blanco */
 }
 
 input[type="text"], input[type="date"] {
@@ -43,15 +44,15 @@ button {
     width: 90%; /* Ancho del botón */
     max-width: 300px; /* Ancho máximo del botón */
     padding: 10px;
-    background-color: #28a745;
-    color: white;
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Color del botón al pasar el mouse */
 }
 
 .spotify-player {
@@ -63,10 +64,5 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-size: 1.2em;
-    color: #555;
-}
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #555;
+    color: white; /* Cambiar el color del texto a blanco */
 }
