@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Reserva Confirmada!</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que el archivo CSS esté vinculado -->
+    <link rel="stylesheet" href="styles.css">
     <script>
         // Función para obtener los parámetros de la URL
         function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
             return {
-                pelicula: params.get('movie'),
-                fecha: params.get('date')
+                pelicula: params.get('pelicula'),
+                fecha: params.get('fecha')
             };
         }
 
@@ -36,5 +36,3 @@
         <p>Recuerda, cada película es mejor cuando se comparte con alguien especial. 💖</p>
         <p>¡Hasta pronto!</p>
     </div>
-</body>
-</html>
