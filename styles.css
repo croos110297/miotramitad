@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     background-image: url('Fondo.jpg');
     background-size: cover;
     background-position: center;
@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9); /* Añade un poco de transparencia al fondo del contenedor */
+    background-color: rgba(255, 255, 255, 0.9);
+    background-color: black;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,12 +20,13 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
+    color: white;
 }
 
 input[type="text"], input[type="date"] {
@@ -58,5 +60,5 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-size: 1.2em;
-    color: #555;
+    color: white;
 }
