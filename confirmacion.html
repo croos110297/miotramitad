@@ -10,8 +10,8 @@
         function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
             return {
-                pelicula: params.get('pelicula'),
-                fecha: params.get('fecha')
+                pelicula: params.get('movie'),
+                fecha: params.get('date')
             };
         }
 
