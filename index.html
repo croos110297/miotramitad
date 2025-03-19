@@ -41,7 +41,7 @@
             event.preventDefault();
             const foodOption = document.getElementById('food-option').value;
             document.getElementById('selected-food').textContent = foodOption;
-            const message = `¡Genial! Has elegido ${foodOption}. Estoy emocionado/a por nuestra cena romántica.`;
+            const message = `¡Hola! 😊\n\nHe elegido ${foodOption} para nuestra cena. Estoy muy emocionada por compartir esta velada especial contigo. 💖`;
             const phoneNumber = '+593963209878'; // Reemplaza con el número de teléfono
             const whatsappLink = `https://api.whatsapp.com/send?phone=+593963209878&text=${encodeURIComponent(message)}`;
             document.getElementById('whatsapp-link').setAttribute('href', whatsappLink);
