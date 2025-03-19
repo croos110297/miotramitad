@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('Fondo.png'); /* Establece la imagen de fondo */
+    background-image: url('Fondo.jpg'); /* Establece la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen */
     color: #333;
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    color: #e63946;
+    color: #00FFFF;
 }
 
 p {
