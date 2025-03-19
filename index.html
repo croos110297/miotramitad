@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Una noche de cine especial</title>
+    <title>Invitación a Cena Romántica</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>¡Te Invito a una Cena Romántica!</h1>
+        <p>Querido/a [Nombre],</p>
+        <p>Me encantaría compartir una velada especial contigo. Por favor, elige tu opción de comida favorita:</p>
+        
+        <form id="dinner-invitation">
+            <label for="food-option">Selecciona tu opción de comida:</label>
+            <select id="food-option" name="food-option" required>
+                <option value="" disabled selected>-- Elige una opción --</option>
+                <option value="pasta">Pasta</option>
+                <option value="sushi">Sushi</option>
+                <option value="steak">Carne a la parrilla</option>
+                <option value="vegan">Opción vegana</option>
+                <option value="mariscos">Mariscos</option>
+            </select>
+            <button type="submit">Enviar Invitación</button>
+        </form>
 
-<div class="container">
-    <h1>🎬 Una Noche de Cine 🍿</h1>
-    <form id="invitationForm">
-        <label for="movie">¿Qué película quieres ver?</label>
-        <input type="text" id="movie" name="movie" required>
-
-        <label for="date">Selecciona una fecha:</label>
-        <input type="date" id="date" name="date" required>
-
-        <button type="submit">Enviar Invitación</button>
-    </form>
-
-    <div class="spotify-player">
-        <h2>¡Escucha nuestra playlist en Spotify!</h2>
-        <iframe src="https://open.spotify.com/embed/playlist/04yHuzAFh2262JfkwGp4qO" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <div id="whatsapp-message" style="display:none;">
+            <p>¡Genial! Has elegido <span id="selected-food"></span>. Estoy emocionado/a por nuestra cena romántica.</p>
+            <a id="whatsapp-link" href="#" target="_blank">Enviar Confirmación por WhatsApp</a>
+        </div>
     </div>
 
-    <div class="location">
-        <p>📍 Lugar: Multicines - Quicentro Shopping</p>
-    </div>
-</div>
-
-<script>
-    document.getElementById('invitationForm').onsubmit = function(event) {
-        event.preventDefault(); // Evita el envío del formulario
-        const movie = document.getElementById('movie').value; // Obtiene el valor de la película
-        const date = document.getElementById('date').value; // Obtiene el valor de la fecha
-        // Redirige a la página de confirmación con los parámetros
-        window.location.href = `confirmation.html?pelicula=${encodeURIComponent(movie)}&fecha=${encodeURIComponent(date)}`;
-    };
-</script>
-
+    <script>
+        document.getElementById('dinner-invitation').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const foodOption = document.getElementById('food-option').value;
+            document.getElementById('selected-food').textContent = foodOption;
+            const message = `¡Genial! Has elegido ${foodOption}. Estoy emocionado/a por nuestra cena romántica.`;
+            const phoneNumber = '+593963209878'; // Reemplaza con el número de teléfono
+            const whatsappLink = `https://api.whatsapp.com/send?phone=+593963209878?text=${encodeURIComponent(message)}`;
+            document.getElementById('whatsapp-link').setAttribute('href', whatsappLink);
+            document.getElementById('whatsapp-message').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
