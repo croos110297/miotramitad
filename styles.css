@@ -3,7 +3,7 @@ body {
     background-image: url('Fondo.jpg'); /* Establece la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen */
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    color: #00FFFF;
+    color: #FF4F81;
 }
 
 p {
@@ -35,19 +35,19 @@ select {
     padding: 10px;
     font-size: 1em;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #333333;
 }
 
 button {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #e63946;
+    background-color: #D7263D;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #d62839;
+    background-color: #FFFFFF;
 }
