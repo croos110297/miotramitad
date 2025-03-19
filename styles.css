@@ -38,6 +38,8 @@ select {
     font-size: 1em;
     border-radius: 5px;
     border: 1px solid #333333;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -49,7 +51,20 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #FF4F81;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 button:hover {
     background-color: #FFFFFF;
 }
